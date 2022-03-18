@@ -1,4 +1,4 @@
-<p align="center"><a href="../" target="_blank"><img src="assets/images/logo/logo_large2.png" width="400"></a></p>
+<p align="center"><a href="" target="_blank"><img src="assets/images/logo/logo_large2.png" width="400"></a></p>
 
 # Progetto HTML CSS
 
