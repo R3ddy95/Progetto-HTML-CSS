@@ -160,6 +160,13 @@ hr + h2::first-letter {
   margin-top: 50px;
 }
 
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
 .back-to-top {
   display: flex;
   justify-content: center;
