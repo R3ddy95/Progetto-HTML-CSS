@@ -1,3 +1,5 @@
+<p align="center"><a href="../" target="_blank"><img src="assets/images/logo/logo_large2.png" width="400"></a></p>
+
 # Progetto HTML CSS
 
 This project is mainly based on HTML and CSS created by me (Edoardo Vitagliano) for the final project of the Start2Impact HTML and CSS course.
