@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href='../assets/css/styles.css' rel='stylesheet'/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+      emailjs.init("nLoMoZFMAMRpMyi8o");
+    })();
+    </script>
     <title>Edoardo Vitagliano - Full-Stack Developer</title>
     <link rel="icon" type="image/x-icon" href="../assets/images/logo/logo_small_icon_only.png">
   </head>
@@ -80,19 +87,19 @@
 
 
           <!-- Form -->
-        <form class="form">
+        <form class="form" action='' method='get'>
           <!-- 2 column grid layout with text inputs for the first and last names -->
           <div class="row mb-4">
             <div class="col">
               <div class="form-outline">
                 <label class="form-label" for="form6Example1">Il tuo nome*</label>
-                <input type="text" id="form6Example1" class="form-control" />
+                <input type="text" id="nome" class="form-control" required />
               </div>
             </div>
             <div class="col">
               <div class="form-outline">
                 <label class="form-label" for="form6Example2">Oggetto*</label>
-                <input type="text" id="form6Example2" class="form-control" />
+                <input type="text" id="oggetto" class="form-control" required />
               </div>
             </div>
           </div>
@@ -102,14 +109,14 @@
             <div class="col">
              <div class="form-outline mb-4">
               <label class="form-label" for="form6Example5">La tua email*</label>
-              <input type="email" id="form6Example5" class="form-control" placeholder='example@example.com' />
+              <input type="email" id="email" class="form-control" placeholder='example@example.com' required />
              </div>
             </div>
           <!-- Number input -->
          <div class="col">
           <div class="form-outline mb-4">
             <label class="form-label" for="form6Example6">Il tuo numero di telefono (opzionale)</label>
-            <input type="number" id="form6Example6" class="form-control" />
+            <input type="number" id="numero" class="form-control" />
           </div>
         </div>
         </div>
@@ -117,18 +124,12 @@
           <!-- Message input -->
           <div class="form-outline mb-4">
             <label class="form-label" for="form6Example7">Il tuo messaggio*</label>
-            <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+            <textarea class="form-control" id="messaggio" rows="4" required ></textarea>
             <div class='instructions'>Massimo 500 caratteri</div>
           </div>
 
-          <!-- Checkbox -->
-          <div class="form-check d-flex justify-content-center mb-4">
-            <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
-            <label class="form-check-label" for="form6Example8"> Send me a copy of this message </label>
-          </div>
-
           <!-- Submit button -->
-          <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark">SEND</button>
+          <button type="submit" onSubmit="sendMail()" class="btn btn-outline-dark" data-mdb-ripple-color="dark">SEND</button>
         </form>
 
 
@@ -169,17 +170,15 @@
                             <h3>Edoardo Vitagliano</h3>
                             <p>Grazie per aver visitato il mio sito web.
                                <br>
-                               Sotto potete trovare i vari link a tutti i miei social,
-                              <br>
-                              potete anche mandarmi una mail a edoardovitagliano3@gmail.com</p>
+                               Sotto potete trovare i vari link a tutti i miei social.
                         </div>
                         <div class="col item social">
 
-                          <a style="background-color: #3b5998;" href="https://www.facebook.com/BlackJocker/"><i class="icon ion-social-facebook"></i></a>
-                          <a style="background-color: #55acee;" href="https://twitter.com/EdoardoVitaglia"><i class="icon ion-social-twitter"></i></a>
-                          <a style="background-color: #333333;" href="https://github.com/R3ddy95"><i class="icon ion-social-github"></i></a>
-                          <a style="background-color: #0082ca;" href="https://www.linkedin.com/in/edoardo-vitagliano-299737110/"><i class="icon ion-social-linkedin"></i></a>
-                          <a style="background-color: #ac2bac;" href="https://www.instagram.com/r3deddy/"><i class="icon ion-social-instagram"></i></a>
+                          <a style="background-color: #3b5998;" href="https://www.facebook.com/BlackJocker/" target="_blank"><i class="icon ion-social-facebook"></i></a>
+                          <a style="background-color: #55acee;" href="https://twitter.com/EdoardoVitaglia" target="_blank"><i class="icon ion-social-twitter"></i></a>
+                          <a style="background-color: #333333;" href="https://github.com/R3ddy95" target="_blank"><i class="icon ion-social-github"></i></a>
+                          <a style="background-color: #0082ca;" href="https://www.linkedin.com/in/edoardo-vitagliano-299737110/" target="_blank"><i class="icon ion-social-linkedin"></i></a>
+                          <a style="background-color: #ac2bac;" href="https://www.instagram.com/r3deddy/" target="_blank"><i class="icon ion-social-instagram"></i></a>
 
                         </div>
                     </div>
